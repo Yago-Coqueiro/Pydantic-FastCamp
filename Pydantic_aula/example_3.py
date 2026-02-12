@@ -5,13 +5,13 @@ from typing import Any, Self     # Any permite qualquer tipo; Self refere-se à 
 
 # Importações específicas do Pydantic para estruturar, validar e exportar modelos
 from pydantic import (
-    BaseModel,            # Classe base para a criação de modelos de dados robustos
-    EmailStr,             # Validador de strings que seguem o formato oficial de e-mail
+    BaseModel,            # Classe base para a criação de modelos de dados 
+    EmailStr,             # Validador de strings para o e-mail
     Field,                # Permite configurar metadados, valores padrão e restrições de campos
-    field_serializer,     # Decorador que define como um campo deve ser formatado ao sair para JSON
-    field_validator,      # Decorador para criar funções de validação para campos específicos
+    field_serializer,     # Decorador que define como um campo deve ser formatado para JSON
+    field_validator,      # Decorador para criar funções de validação 
     model_serializer,     # Decorador para controlar a representação final do objeto inteiro
-    model_validator,      # Decorador para validações que cruzam dados de múltiplos campos
+    model_validator,      # Decorador para validações que cruzam dados 
     SecretStr,            # Classe que oculta valores sensíveis em prints e logs
 )
 
