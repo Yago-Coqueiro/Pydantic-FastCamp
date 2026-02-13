@@ -1,0 +1,22 @@
+[tool.poetry]
+# Metadados básicos do projeto
+name = "pydantic-course-arjancodes"
+version = "0.1.0"
+description = "Projeto de estudo sobre validação de dados e APIs com Pydantic V2 e FastAPI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+# Define a versão do interpretador Python necessária
+python = "^3.11"
+
+# Dependência principal: Pydantic V2 para toda a lógica de validação de modelos
+pydantic = {extras = ["email"], version = "^2.6.1"}
+
+# Framework para criação da API e ferramentas de teste assíncrono
+fastapi = "^0.109.2"
+httpx = "^0.26.0"
+
+[build-system]
+# Define o motor que o Poetry usa para construir o ambiente virtual
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
