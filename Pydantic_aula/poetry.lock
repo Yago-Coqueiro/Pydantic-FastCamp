@@ -1,0 +1,69 @@
+# Não deve ser editado manualmente.
+# Arquivo que garante que todos os desenvolvedores do projeto utilizem exatamente as mesmas versões.
+
+[[package]]
+name = "annotated-types"
+version = "0.6.0"
+description = "Tipos reutilizáveis para restrições no typing.Annotated (usado internamente pelo Pydantic V2)"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "anyio"
+version = "4.2.0"
+description = "Camada de compatibilidade para bibliotecas assíncronas (essencial para o funcionamento do FastAPI)"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+idna = ">=2.8"
+sniffio = ">=1.1"
+
+[[package]]
+name = "email-validator"
+version = "2.1.0.post1"
+description = "Biblioteca que fornece a lógica de validação rigorosa para o tipo EmailStr no Pydantic"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+dnspython = ">=2.0.0"
+idna = ">=2.0.0"
+
+[[package]]
+name = "fastapi"
+version = "0.109.2"
+description = "Framework principal utilizado para criar as rotas e endpoints da API"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+pydantic = ">=1.7.4,<3.0.0"
+starlette = ">=0.36.3,<0.37.0"
+typing-extensions = ">=4.8.0"
+
+[[package]]
+name = "pydantic"
+version = "2.6.1"
+description = "O motor de validação de dados central do projeto (Pydantic V2)"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+annotated-types = ">=0.4.0"
+pydantic-core = "2.16.2" # O núcleo em Rust que garante a velocidade da validação
+typing-extensions = ">=4.6.1"
+
+[[package]]
+name = "httpx"
+version = "0.26.0"
+description = "Cliente HTTP moderno usado pelo TestClient para simular requisições no example_4.py"
+optional = false
+python-versions = ">=3.8"
+
+[metadata]
+# Lock-version indica a versão do formato do arquivo Poetry
+lock-version = "2.0"
+# Define a versão do Python compatível com este conjunto de dependências
+python-versions = "^3.11"
+content-hash = "c13a82270e84e548e0d690642ed80a77910931f0397facaae445249a0c0fcb27"
